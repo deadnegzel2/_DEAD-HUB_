@@ -1,0 +1,885 @@
+-- (VOID) : Gui to Lua
+-- Version: 1.4
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Dead__Hub = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Pages_Buttons = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Home_Page_Button = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local Scripts_Page_Button = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local Settings_Page_Button = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local UIListLayout = Instance.new("UIListLayout")
+local Dead_Hub = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local Dead_Hub_Menu = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local Bottom_Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local Hide_Button = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local Pages = Instance.new("Frame")
+local Home = Instance.new("Frame")
+local Playe_Image = Instance.new("ImageLabel")
+local Name_Text = Instance.new("TextLabel")
+local Welcome_Text = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Settings = Instance.new("Frame")
+local Comingsoon_Text = Instance.new("TextLabel")
+local Scripts = Instance.new("Frame")
+local Commands_Page = Instance.new("Frame")
+local Prison_Life = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local Admin_bir_Button = Instance.new("TextButton")
+local Admin_iki_Button = Instance.new("TextButton")
+local Funky_Friday = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local Auto_Bot = Instance.new("TextButton")
+local Flag_Wars = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local Flag_Wars_Destroyer_Button = Instance.new("TextButton")
+local Arsenal = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local Owl_Hub_Button = Instance.new("TextButton")
+local Dark_Hub_Button = Instance.new("TextButton")
+local Fall_Of_Hell = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local God_Mode = Instance.new("TextButton")
+local Doors = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local Anti_Eye_Button = Instance.new("TextButton")
+local Doors_Menu_Button = Instance.new("TextButton")
+local Rainbow_Friends = Instance.new("Frame")
+local TextLabel_10 = Instance.new("TextLabel")
+local Auto_Bot_2 = Instance.new("TextButton")
+local Prison_Life_Button = Instance.new("TextButton")
+local Funky_Friday_Button = Instance.new("TextButton")
+local Flag_Wars_Button = Instance.new("TextButton")
+local Arsenal_Button = Instance.new("TextButton")
+local Fall_Of_Hell_Button = Instance.new("TextButton")
+local Doors_Button = Instance.new("TextButton")
+local Rainbow_Friends_Button = Instance.new("TextButton")
+local UIPageLayout = Instance.new("UIPageLayout")
+local Frame_4 = Instance.new("Frame")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Open_Button = Instance.new("TextButton")
+local Players = game:GetService("Players")
+
+local player = Players.LocalPlayer
+
+
+local userId = player.UserId
+local thumbType = Enum.ThumbnailType.HeadShot
+local thumbSize = Enum.ThumbnailSize.Size420x420
+local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+
+
+local imageLabel = script.Parent
+
+--Properties:
+
+ScreenGui.Parent = (game:GetService("CoreGui") or gethui())
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Dead__Hub.Name = "Dead__Hub"
+Dead__Hub.Parent = ScreenGui
+Dead__Hub.AnchorPoint = Vector2.new(0.5, 0.5)
+Dead__Hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Dead__Hub.BackgroundTransparency = 1.000
+Dead__Hub.BorderSizePixel = 0
+Dead__Hub.Position = UDim2.new(0.5, 0, 0.5, 0)
+Dead__Hub.Size = UDim2.new(1, 0, 1, 0)
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Dead__Hub
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.BorderSizePixel = 0
+MainFrame.ClipsDescendants = true
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Size = UDim2.new(1, 0, 1, 0)
+
+Frame.Parent = MainFrame
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.5, 0, 0.47131148, 0)
+Frame.Size = UDim2.new(0.882121801, 0, 0.862704933, 0)
+
+UIAspectRatioConstraint.Parent = Frame
+UIAspectRatioConstraint.AspectRatio = 2.133
+
+Pages_Buttons.Name = "Pages_Buttons"
+Pages_Buttons.Parent = Frame
+Pages_Buttons.AnchorPoint = Vector2.new(0.5, 0.5)
+Pages_Buttons.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Pages_Buttons.ClipsDescendants = true
+Pages_Buttons.Position = UDim2.new(0.436330348, 0, 0.0784498975, 0)
+Pages_Buttons.Size = UDim2.new(0.971830249, 0, 0.144183725, 0)
+
+UICorner.CornerRadius = UDim.new(0.0399999991, 0)
+UICorner.Parent = Pages_Buttons
+
+Home_Page_Button.Name = "Home_Page_Button"
+Home_Page_Button.Parent = Pages_Buttons
+Home_Page_Button.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+Home_Page_Button.Position = UDim2.new(0.0175670069, 0, 0.206761211, 0)
+Home_Page_Button.Size = UDim2.new(0, 112, 0, 28)
+Home_Page_Button.Font = Enum.Font.SourceSans
+Home_Page_Button.Text = "Home"
+Home_Page_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Home_Page_Button.TextSize = 14.000
+Home_Page_Button.MouseButton1Down:connect(function()
+	Home.Visible = true
+	Scripts.Visible = false
+	Settings.Visible = false
+end)
+
+UICorner_2.CornerRadius = UDim.new(0.0399999991, 0)
+UICorner_2.Parent = Home_Page_Button
+
+UIAspectRatioConstraint_2.Parent = Home_Page_Button
+UIAspectRatioConstraint_2.AspectRatio = 2.133
+
+Scripts_Page_Button.Name = "Scripts_Page_Button"
+Scripts_Page_Button.Parent = Pages_Buttons
+Scripts_Page_Button.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+Scripts_Page_Button.Position = UDim2.new(0.139009804, 0, 0.206761211, 0)
+Scripts_Page_Button.Size = UDim2.new(0, 112, 0, 28)
+Scripts_Page_Button.Font = Enum.Font.SourceSans
+Scripts_Page_Button.Text = "Scripts"
+Scripts_Page_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Scripts_Page_Button.TextSize = 14.000
+Scripts_Page_Button.MouseButton1Down:connect(function()
+	Scripts.Visible = true
+	Home.Visible = false
+	Settings.Visible = false
+end)
+
+UICorner_3.CornerRadius = UDim.new(0.0399999991, 0)
+UICorner_3.Parent = Scripts_Page_Button
+
+UIAspectRatioConstraint_3.Parent = Scripts_Page_Button
+UIAspectRatioConstraint_3.AspectRatio = 2.133
+
+Settings_Page_Button.Name = "Settings_Page_Button"
+Settings_Page_Button.Parent = Pages_Buttons
+Settings_Page_Button.BackgroundColor3 = Color3.fromRGB(132, 132, 132)
+Settings_Page_Button.Position = UDim2.new(0.265246391, 0, 0.206761211, 0)
+Settings_Page_Button.Size = UDim2.new(0, 112, 0, 28)
+Settings_Page_Button.Font = Enum.Font.SourceSans
+Settings_Page_Button.Text = "Settings"
+Settings_Page_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Settings_Page_Button.TextSize = 14.000
+Settings_Page_Button.MouseButton1Down:connect(function()
+	Settings.Visible = true
+	Home.Visible = false
+	Scripts.Visible = false
+end)
+
+UICorner_4.CornerRadius = UDim.new(0.0399999991, 0)
+UICorner_4.Parent = Settings_Page_Button
+
+UIAspectRatioConstraint_4.Parent = Settings_Page_Button
+UIAspectRatioConstraint_4.AspectRatio = 2.133
+
+UIListLayout.Parent = Frame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 10)
+
+Dead_Hub.Name = "Dead_Hub"
+Dead_Hub.Parent = Frame
+Dead_Hub.AnchorPoint = Vector2.new(0.5, 0.5)
+Dead_Hub.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Dead_Hub.ClipsDescendants = true
+Dead_Hub.Position = UDim2.new(0.496074468, 0, 0.514482081, 0)
+Dead_Hub.Size = UDim2.new(0.966592431, 0, 0.80997622, 0)
+
+UICorner_5.CornerRadius = UDim.new(0.0399999991, 0)
+UICorner_5.Parent = Dead_Hub
+
+UIAspectRatioConstraint_5.Parent = Dead_Hub
+UIAspectRatioConstraint_5.AspectRatio = 2.545
+
+Dead_Hub_Menu.Name = "Dead_Hub_Menu"
+Dead_Hub_Menu.Parent = Dead_Hub
+Dead_Hub_Menu.AnchorPoint = Vector2.new(0.5, 0.5)
+Dead_Hub_Menu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Dead_Hub_Menu.BackgroundTransparency = 1.000
+Dead_Hub_Menu.Position = UDim2.new(0.5, 0, 0.5, 0)
+Dead_Hub_Menu.Size = UDim2.new(1, 0, 1, 0)
+
+Frame_2.Parent = Dead_Hub_Menu
+Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.500000119, 0, 0.672673106, 0)
+Frame_2.Size = UDim2.new(1.00000024, 0, 0.654653549, 0)
+
+Bottom_Frame.Name = "Bottom_Frame"
+Bottom_Frame.Parent = Frame_2
+Bottom_Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Bottom_Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bottom_Frame.BackgroundTransparency = 1.000
+Bottom_Frame.BorderSizePixel = 0
+Bottom_Frame.Position = UDim2.new(0.5, 0, 0.913109303, 0)
+Bottom_Frame.Size = UDim2.new(1, 0, 0.091616109, 0)
+
+TextLabel.Parent = Bottom_Frame
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.50747633, 0, 0.5, 0)
+TextLabel.Size = UDim2.new(0.985047162, 0, 1, 0)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "V1.2 // © 2023 Deadnegzel61's Script"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+TextLabel.TextTransparency = 0.630
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame_3.Parent = Dead_Hub_Menu
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 182, 93)
+Frame_3.BorderColor3 = Color3.fromRGB(255, 112, 17)
+Frame_3.Position = UDim2.new(-0.00321318116, 0, 0, 0)
+Frame_3.Size = UDim2.new(0, 626, 0, 41)
+Frame_3.Style = Enum.FrameStyle.RobloxRound
+
+TextLabel_2.Parent = Frame_3
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.00931439362, 0, -0.425238997, 0)
+TextLabel_2.Size = UDim2.new(0, 619, 0, 41)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "DEAD HUB"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Hide_Button.Name = "Hide_Button"
+Hide_Button.Parent = Frame_3
+Hide_Button.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+Hide_Button.Position = UDim2.new(0.921652496, 0, 0.15664953, 0)
+Hide_Button.Size = UDim2.new(0, 41, 0, 16)
+Hide_Button.Font = Enum.Font.SourceSans
+Hide_Button.Text = "--"
+Hide_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hide_Button.TextSize = 14.000
+Hide_Button.MouseButton1Down:connect(function()
+	Dead__Hub.Visible = false
+	Open_Button.Visible = true
+end)
+
+UICorner_6.CornerRadius = UDim.new(0.0399999991, 0)
+UICorner_6.Parent = Hide_Button
+
+UIAspectRatioConstraint_6.Parent = Hide_Button
+UIAspectRatioConstraint_6.AspectRatio = 2.133
+
+Pages.Name = "Pages"
+Pages.Parent = Dead_Hub_Menu
+Pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pages.BackgroundTransparency = 1.000
+Pages.Position = UDim2.new(0.00160659058, 0, 0.163580135, 0)
+Pages.Size = UDim2.new(0, 619, 0, 183)
+
+Home.Name = "Home"
+Home.Parent = Pages
+Home.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Home.Position = UDim2.new(0.00322209951, 0, 0.00511018932, 0)
+Home.Size = UDim2.new(0, 619, 0, 183)
+
+Playe_Image.Name = "Playe_Image"
+Playe_Image.Parent = Home
+Playe_Image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Playe_Image.Position = UDim2.new(0.0516962782, 0, 0.0983606577, 0)
+Playe_Image.Size = UDim2.new(0, 57, 0, 55)
+Playe_Image.Image = content
+Playe_Image.Size = UDim2.new(0, 100, 0, 100)
+
+Name_Text.Name = "Name_Text"
+Name_Text.Parent = Home
+Name_Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_Text.BackgroundTransparency = 1.000
+Name_Text.Position = UDim2.new(0.647819102, 0, 0.240437165, 0)
+Name_Text.Size = UDim2.new(0, 197, 0, 74)
+Name_Text.Font = Enum.Font.SourceSans
+Name_Text.Text = game.Players.LocalPlayer.Name
+Name_Text.TextColor3 = Color3.fromRGB(0, 0, 0)
+Name_Text.TextScaled = true
+Name_Text.TextSize = 14.000
+Name_Text.TextWrapped = true
+
+Welcome_Text.Name = "Welcome_Text"
+Welcome_Text.Parent = Home
+Welcome_Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome_Text.BackgroundTransparency = 1.000
+Welcome_Text.Position = UDim2.new(0.260096967, 0, 0.240437165, 0)
+Welcome_Text.Size = UDim2.new(0, 230, 0, 74)
+Welcome_Text.Font = Enum.Font.SourceSans
+Welcome_Text.Text = "Welcome"
+Welcome_Text.TextColor3 = Color3.fromRGB(0, 0, 0)
+Welcome_Text.TextScaled = true
+Welcome_Text.TextSize = 14.000
+Welcome_Text.TextWrapped = true
+
+TextLabel_3.Name = "!"
+TextLabel_3.Parent = Home
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.940226316, 0, 0.24043715, 0)
+TextLabel_3.Size = UDim2.new(0, 52, 0, 74)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "!"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Settings.Name = "Settings"
+Settings.Parent = Pages
+Settings.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Settings.Position = UDim2.new(-0.0016244268, 0, 0.00511018932, 0)
+Settings.Size = UDim2.new(0, 619, 0, 183)
+Settings.Visible = false
+
+Comingsoon_Text.Name = "Comingsoon_Text"
+Comingsoon_Text.Parent = Settings
+Comingsoon_Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Comingsoon_Text.BackgroundTransparency = 1.000
+Comingsoon_Text.Position = UDim2.new(0.176090464, 0, 0.218579233, 0)
+Comingsoon_Text.Size = UDim2.new(0, 426, 0, 81)
+Comingsoon_Text.Font = Enum.Font.SourceSans
+Comingsoon_Text.Text = "Coming Soon..."
+Comingsoon_Text.TextColor3 = Color3.fromRGB(0, 0, 0)
+Comingsoon_Text.TextScaled = true
+Comingsoon_Text.TextSize = 14.000
+Comingsoon_Text.TextWrapped = true
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Pages
+Scripts.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Scripts.Position = UDim2.new(-0.0016244268, 0, 0.00511018932, 0)
+Scripts.Size = UDim2.new(0, 619, 0, 183)
+Scripts.Visible = false
+
+Commands_Page.Name = "Commands_Page"
+Commands_Page.Parent = Scripts
+Commands_Page.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Commands_Page.Position = UDim2.new(0.392568648, 0, -0.00391071104, 0)
+Commands_Page.Size = UDim2.new(0, 376, 0, 183)
+
+Prison_Life.Name = "Prison_Life"
+Prison_Life.Parent = Commands_Page
+Prison_Life.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Prison_Life.Position = UDim2.new(-0.00104837213, 0, -0.00937519222, 0)
+Prison_Life.Size = UDim2.new(0, 376, 0, 183)
+Prison_Life.Visible = false
+
+TextLabel_4.Parent = Prison_Life
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.257978737, 0, 0.0109289614, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 35)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Prison Life"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+Admin_bir_Button.Name = "Admin_bir_Button"
+Admin_bir_Button.Parent = Prison_Life
+Admin_bir_Button.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Admin_bir_Button.Position = UDim2.new(0.0585106388, 0, 0.245901644, 0)
+Admin_bir_Button.Size = UDim2.new(0, 326, 0, 34)
+Admin_bir_Button.Font = Enum.Font.SourceSans
+Admin_bir_Button.Text = "Admin - 1"
+Admin_bir_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin_bir_Button.TextScaled = true
+Admin_bir_Button.TextSize = 14.000
+Admin_bir_Button.TextWrapped = true
+Admin_bir_Button.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+end)
+
+Admin_iki_Button.Name = "Admin_iki_Button"
+Admin_iki_Button.Parent = Prison_Life
+Admin_iki_Button.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Admin_iki_Button.Position = UDim2.new(0.0585106388, 0, 0.491803318, 0)
+Admin_iki_Button.Size = UDim2.new(0, 326, 0, 34)
+Admin_iki_Button.Font = Enum.Font.SourceSans
+Admin_iki_Button.Text = "Admin - 2"
+Admin_iki_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin_iki_Button.TextScaled = true
+Admin_iki_Button.TextSize = 14.000
+Admin_iki_Button.TextWrapped = true
+Admin_iki_Button.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/deadnegzel2/_DEAD-HUB_/main/Prison%20Life%20Menu.txt'),true))()
+end)
+
+Funky_Friday.Name = "Funky_Friday"
+Funky_Friday.Parent = Commands_Page
+Funky_Friday.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Funky_Friday.Position = UDim2.new(-0.00104837213, 0, -0.00937519222, 0)
+Funky_Friday.Size = UDim2.new(0, 376, 0, 183)
+Funky_Friday.Visible = false
+
+TextLabel_5.Parent = Funky_Friday
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.257978737, 0, 0.0109289614, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 35)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Funky Friday"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+Auto_Bot.Name = "Auto_Bot"
+Auto_Bot.Parent = Funky_Friday
+Auto_Bot.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Auto_Bot.Position = UDim2.new(0.0585106388, 0, 0.245901644, 0)
+Auto_Bot.Size = UDim2.new(0, 326, 0, 34)
+Auto_Bot.Font = Enum.Font.SourceSans
+Auto_Bot.Text = "Auto Bot"
+Auto_Bot.TextColor3 = Color3.fromRGB(0, 0, 0)
+Auto_Bot.TextScaled = true
+Auto_Bot.TextSize = 14.000
+Auto_Bot.TextWrapped = true
+Auto_Bot.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZoinkyPoinkie/FunkyFridayDevTools/main/Un-Obfuscated",true))()
+end)
+
+Flag_Wars.Name = "Flag_Wars"
+Flag_Wars.Parent = Commands_Page
+Flag_Wars.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Flag_Wars.Position = UDim2.new(-0.00104837213, 0, -0.00937519222, 0)
+Flag_Wars.Size = UDim2.new(0, 376, 0, 183)
+Flag_Wars.Visible = false
+
+TextLabel_6.Parent = Flag_Wars
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.257978737, 0, 0.0109289614, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 35)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Flag Wars"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+Flag_Wars_Destroyer_Button.Name = "Flag_Wars_Destroyer_Button"
+Flag_Wars_Destroyer_Button.Parent = Flag_Wars
+Flag_Wars_Destroyer_Button.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Flag_Wars_Destroyer_Button.Position = UDim2.new(0.0585106388, 0, 0.245901644, 0)
+Flag_Wars_Destroyer_Button.Size = UDim2.new(0, 326, 0, 34)
+Flag_Wars_Destroyer_Button.Font = Enum.Font.SourceSans
+Flag_Wars_Destroyer_Button.Text = "Flag Wars Destroyer"
+Flag_Wars_Destroyer_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Flag_Wars_Destroyer_Button.TextScaled = true
+Flag_Wars_Destroyer_Button.TextSize = 14.000
+Flag_Wars_Destroyer_Button.TextWrapped = true
+Flag_Wars_Destroyer_Button.MouseButton1Down:connect(function()
+	loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\84\97\107\101\77\111\100\122\122\47\70\108\97\103\45\87\97\114\115\45\68\101\115\116\114\111\121\101\114\47\109\97\105\110\47\77\97\100\101\37\50\48\66\121\37\50\48\84\97\107\101\37\50\48\77\111\100\122\122\34\41\40\41\10")()
+end)
+
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = Commands_Page
+Arsenal.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Arsenal.Position = UDim2.new(-0.00104837213, 0, -0.00937519222, 0)
+Arsenal.Size = UDim2.new(0, 376, 0, 183)
+Arsenal.Visible = false
+
+TextLabel_7.Parent = Arsenal
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.257978737, 0, 0.0109289614, 0)
+TextLabel_7.Size = UDim2.new(0, 200, 0, 35)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Arsenal"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+Owl_Hub_Button.Name = "Owl_Hub_Button"
+Owl_Hub_Button.Parent = Arsenal
+Owl_Hub_Button.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Owl_Hub_Button.Position = UDim2.new(0.0585106388, 0, 0.245901644, 0)
+Owl_Hub_Button.Size = UDim2.new(0, 326, 0, 34)
+Owl_Hub_Button.Font = Enum.Font.SourceSans
+Owl_Hub_Button.Text = "Owl Hub"
+Owl_Hub_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Owl_Hub_Button.TextScaled = true
+Owl_Hub_Button.TextSize = 14.000
+Owl_Hub_Button.TextWrapped = true
+Owl_Hub_Button.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
+end)
+
+Dark_Hub_Button.Name = "Dark_Hub_Button"
+Dark_Hub_Button.Parent = Arsenal
+Dark_Hub_Button.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Dark_Hub_Button.Position = UDim2.new(0.0585106388, 0, 0.530054629, 0)
+Dark_Hub_Button.Size = UDim2.new(0, 326, 0, 34)
+Dark_Hub_Button.Font = Enum.Font.SourceSans
+Dark_Hub_Button.Text = "Dark Hub"
+Dark_Hub_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dark_Hub_Button.TextScaled = true
+Dark_Hub_Button.TextSize = 14.000
+Dark_Hub_Button.TextWrapped = true
+Dark_Hub_Button.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://athoi21.xyz/owlhub"))();
+end)
+
+Fall_Of_Hell.Name = "Fall_Of_Hell"
+Fall_Of_Hell.Parent = Commands_Page
+Fall_Of_Hell.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Fall_Of_Hell.Position = UDim2.new(-0.00104837213, 0, -0.00937519222, 0)
+Fall_Of_Hell.Size = UDim2.new(0, 376, 0, 183)
+Fall_Of_Hell.Visible = false
+
+TextLabel_8.Parent = Fall_Of_Hell
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.257978737, 0, 0.0109289614, 0)
+TextLabel_8.Size = UDim2.new(0, 200, 0, 35)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "Fall Of Hell"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+God_Mode.Name = "God_Mode"
+God_Mode.Parent = Fall_Of_Hell
+God_Mode.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+God_Mode.Position = UDim2.new(0.0585106388, 0, 0.245901644, 0)
+God_Mode.Size = UDim2.new(0, 326, 0, 34)
+God_Mode.Font = Enum.Font.SourceSans
+God_Mode.Text = "God Mode"
+God_Mode.TextColor3 = Color3.fromRGB(0, 0, 0)
+God_Mode.TextScaled = true
+God_Mode.TextSize = 14.000
+God_Mode.TextWrapped = true
+God_Mode.MouseButton1Down:connect(function()
+	game:GetService("Players").LocalPlayer.PlayerGui.ForcefieldUI.Forcefield:Destroy()
+end)
+
+Doors.Name = "Doors"
+Doors.Parent = Commands_Page
+Doors.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Doors.Position = UDim2.new(-0.00104837213, 0, -0.00937519222, 0)
+Doors.Size = UDim2.new(0, 376, 0, 183)
+Doors.Visible = false
+
+TextLabel_9.Parent = Doors
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.257978737, 0, 0.0109289614, 0)
+TextLabel_9.Size = UDim2.new(0, 200, 0, 35)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "DOORS"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+Anti_Eye_Button.Name = "Anti_Eye_Button"
+Anti_Eye_Button.Parent = Doors
+Anti_Eye_Button.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Anti_Eye_Button.Position = UDim2.new(0.0585106388, 0, 0.245901644, 0)
+Anti_Eye_Button.Size = UDim2.new(0, 326, 0, 34)
+Anti_Eye_Button.Font = Enum.Font.SourceSans
+Anti_Eye_Button.Text = "Anti Eye"
+Anti_Eye_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Anti_Eye_Button.TextScaled = true
+Anti_Eye_Button.TextSize = 14.000
+Anti_Eye_Button.TextWrapped = true
+Anti_Eye_Button.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/deadnegzel2/_DEAD-HUB_/main/Doors_Anti_Eye"))()
+end)
+
+Doors_Menu_Button.Name = "Doors_Menu_Button"
+Doors_Menu_Button.Parent = Doors
+Doors_Menu_Button.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Doors_Menu_Button.Position = UDim2.new(0.0664893612, 0, 0.502732277, 0)
+Doors_Menu_Button.Size = UDim2.new(0, 326, 0, 34)
+Doors_Menu_Button.Font = Enum.Font.SourceSans
+Doors_Menu_Button.Text = "Menu"
+Doors_Menu_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Doors_Menu_Button.TextScaled = true
+Doors_Menu_Button.TextSize = 14.000
+Doors_Menu_Button.TextWrapped = true
+Doors_Menu_Button.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+end)
+
+Rainbow_Friends.Name = "Rainbow_Friends"
+Rainbow_Friends.Parent = Commands_Page
+Rainbow_Friends.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Rainbow_Friends.Position = UDim2.new(-0.00104837213, 0, -0.00937519222, 0)
+Rainbow_Friends.Size = UDim2.new(0, 376, 0, 183)
+
+TextLabel_10.Parent = Rainbow_Friends
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.257978737, 0, 0.0109289614, 0)
+TextLabel_10.Size = UDim2.new(0, 200, 0, 35)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "Rainbow Friends"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+Auto_Bot_2.Name = "Auto_Bot"
+Auto_Bot_2.Parent = Rainbow_Friends
+Auto_Bot_2.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Auto_Bot_2.Position = UDim2.new(0.0585106388, 0, 0.245901644, 0)
+Auto_Bot_2.Size = UDim2.new(0, 326, 0, 34)
+Auto_Bot_2.Font = Enum.Font.SourceSans
+Auto_Bot_2.Text = "Menu"
+Auto_Bot_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Auto_Bot_2.TextScaled = true
+Auto_Bot_2.TextSize = 14.000
+Auto_Bot_2.TextWrapped = true
+Auto_Bot_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/TweedLeak/Scripts/main/Rainbow-Friends.lua"))()
+end)
+
+Prison_Life_Button.Name = "Prison_Life_Button"
+Prison_Life_Button.Parent = Scripts
+Prison_Life_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Prison_Life_Button.Position = UDim2.new(0.0387722142, 0, 0.0491803288, 0)
+Prison_Life_Button.Size = UDim2.new(0, 54, 0, 26)
+Prison_Life_Button.Font = Enum.Font.SourceSans
+Prison_Life_Button.Text = "Prison Life"
+Prison_Life_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Prison_Life_Button.TextScaled = true
+Prison_Life_Button.TextSize = 14.000
+Prison_Life_Button.TextWrapped = true
+Prison_Life_Button.MouseButton1Down:connect(function()
+	Prison_Life.Visible = true
+	Arsenal.Visible = false 
+	Doors.Visible = false
+	Flag_Wars.Visible = false
+	Fall_Of_Hell.Visible = false
+	Rainbow_Friends.Visible = false
+	Funky_Friday.Visible = false
+end)
+
+Funky_Friday_Button.Name = "Funky_Friday_Button"
+Funky_Friday_Button.Parent = Scripts
+Funky_Friday_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Funky_Friday_Button.Position = UDim2.new(0.0387722142, 0, 0.234972671, 0)
+Funky_Friday_Button.Size = UDim2.new(0, 54, 0, 26)
+Funky_Friday_Button.Font = Enum.Font.SourceSans
+Funky_Friday_Button.Text = "Funky Friday"
+Funky_Friday_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Funky_Friday_Button.TextScaled = true
+Funky_Friday_Button.TextSize = 14.000
+Funky_Friday_Button.TextWrapped = true
+Funky_Friday_Button.MouseButton1Down:connect(function()
+	Prison_Life.Visible = false
+	Arsenal.Visible = false 
+	Doors.Visible = false
+	Flag_Wars.Visible = false
+	Fall_Of_Hell.Visible = false
+	Rainbow_Friends.Visible = false
+	Funky_Friday.Visible = true
+end)
+
+Flag_Wars_Button.Name = "Flag_Wars_Button"
+Flag_Wars_Button.Parent = Scripts
+Flag_Wars_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Flag_Wars_Button.Position = UDim2.new(0.0387722142, 0, 0.420765013, 0)
+Flag_Wars_Button.Size = UDim2.new(0, 54, 0, 26)
+Flag_Wars_Button.Font = Enum.Font.SourceSans
+Flag_Wars_Button.Text = "Flag Wars"
+Flag_Wars_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Flag_Wars_Button.TextScaled = true
+Flag_Wars_Button.TextSize = 14.000
+Flag_Wars_Button.TextWrapped = true
+Flag_Wars_Button.MouseButton1Down:connect(function()
+	Prison_Life.Visible = false
+	Arsenal.Visible = false 
+	Doors.Visible = false
+	Flag_Wars.Visible = true
+	Fall_Of_Hell.Visible = false
+	Rainbow_Friends.Visible = false
+	Funky_Friday.Visible = false
+end)
+
+Arsenal_Button.Name = "Arsenal_Button"
+Arsenal_Button.Parent = Scripts
+Arsenal_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal_Button.Position = UDim2.new(0.0387722142, 0, 0.59562844, 0)
+Arsenal_Button.Size = UDim2.new(0, 54, 0, 26)
+Arsenal_Button.Font = Enum.Font.SourceSans
+Arsenal_Button.Text = "Arsenal"
+Arsenal_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Arsenal_Button.TextScaled = true
+Arsenal_Button.TextSize = 14.000
+Arsenal_Button.TextWrapped = true
+Arsenal_Button.MouseButton1Down:connect(function()
+	Prison_Life.Visible = false
+	Arsenal.Visible = true
+	Doors.Visible = false
+	Flag_Wars.Visible = false
+	Fall_Of_Hell.Visible = false
+	Rainbow_Friends.Visible = false
+	Funky_Friday.Visible = false
+end)
+
+Fall_Of_Hell_Button.Name = "Fall_Of_Hell_Button"
+Fall_Of_Hell_Button.Parent = Scripts
+Fall_Of_Hell_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fall_Of_Hell_Button.Position = UDim2.new(0.142164782, 0, 0.0491803288, 0)
+Fall_Of_Hell_Button.Size = UDim2.new(0, 54, 0, 26)
+Fall_Of_Hell_Button.Font = Enum.Font.SourceSans
+Fall_Of_Hell_Button.Text = "Fall Of     Hell"
+Fall_Of_Hell_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fall_Of_Hell_Button.TextScaled = true
+Fall_Of_Hell_Button.TextSize = 14.000
+Fall_Of_Hell_Button.TextWrapped = true
+Fall_Of_Hell_Button.MouseButton1Down:connect(function()
+	Prison_Life.Visible = false
+	Arsenal.Visible = false 
+	Doors.Visible = false
+	Flag_Wars.Visible = false
+	Fall_Of_Hell.Visible = true
+	Rainbow_Friends.Visible = false
+	Funky_Friday.Visible = false
+end)
+
+Doors_Button.Name = "Doors_Button"
+Doors_Button.Parent = Scripts
+Doors_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Doors_Button.Position = UDim2.new(0.0387722105, 0, 0.775956273, 0)
+Doors_Button.Size = UDim2.new(0, 54, 0, 26)
+Doors_Button.Font = Enum.Font.SourceSans
+Doors_Button.Text = "DOORS"
+Doors_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Doors_Button.TextScaled = true
+Doors_Button.TextSize = 14.000
+Doors_Button.TextWrapped = true
+Doors_Button.MouseButton1Down:connect(function()
+	Prison_Life.Visible = false
+	Arsenal.Visible = false 
+	Doors.Visible = true
+	Flag_Wars.Visible = false
+	Fall_Of_Hell.Visible = false
+	Rainbow_Friends.Visible = false
+	Funky_Friday.Visible = false
+end)
+
+Rainbow_Friends_Button.Name = "Rainbow_Friends_Button"
+Rainbow_Friends_Button.Parent = Scripts
+Rainbow_Friends_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow_Friends_Button.Position = UDim2.new(0.142164782, 0, 0.234972671, 0)
+Rainbow_Friends_Button.Size = UDim2.new(0, 54, 0, 26)
+Rainbow_Friends_Button.Font = Enum.Font.SourceSans
+Rainbow_Friends_Button.Text = "Rainbow Friends"
+Rainbow_Friends_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rainbow_Friends_Button.TextScaled = true
+Rainbow_Friends_Button.TextSize = 14.000
+Rainbow_Friends_Button.TextWrapped = true
+Rainbow_Friends_Button.MouseButton1Down:connect(function()
+	Prison_Life.Visible = false
+	Arsenal.Visible = false 
+	Doors.Visible = false
+	Flag_Wars.Visible = false
+	Fall_Of_Hell.Visible = false
+	Rainbow_Friends.Visible = true
+	Funky_Friday.Visible = false
+end)
+
+UIPageLayout.Parent = Dead_Hub
+UIPageLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIPageLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIPageLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIPageLayout.TweenTime = 0.500
+
+Frame_4.Parent = MainFrame
+Frame_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.BackgroundTransparency = 1.000
+Frame_4.Position = UDim2.new(0.5, 0, 0.47131148, 0)
+Frame_4.Size = UDim2.new(0.882121801, 0, 0.862704933, 0)
+
+UIAspectRatioConstraint_7.Parent = Frame_4
+UIAspectRatioConstraint_7.AspectRatio = 2.133
+
+UIListLayout_2.Parent = Frame_4
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout_2.Padding = UDim.new(0, 10)
+
+Open_Button.Name = "Open_Button"
+Open_Button.Parent = ScreenGui
+Open_Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Open_Button.Position = UDim2.new(-0.0027397261, 0, 0.525340974, 0)
+Open_Button.Size = UDim2.new(0, 92, 0, 23)
+Open_Button.Visible = false
+Open_Button.Font = Enum.Font.SourceSans
+Open_Button.Text = "OPEN"
+Open_Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open_Button.TextScaled = true
+Open_Button.TextSize = 14.000
+Open_Button.TextWrapped = true
+Open_Button.MouseButton1Down:connect(function()
+	Dead__Hub.Visible = true
+	Open_Button.Visible = false
+end)
+
+-- Scripts:
+
+local function YOQRKY_fake_script() -- Playe_Image.LocalScript 
+	local script = Instance.new('LocalScript', Playe_Image)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+	imageLabel.Size = UDim2.new(0, 100, 0, 100)
+end
+coroutine.wrap(YOQRKY_fake_script)()
+local function TDZOKX_fake_script() -- Name_Text.LocalScript 
+	local script = Instance.new('LocalScript', Name_Text)
+
+	script.Parent.Text = game.Players.LocalPlayer.Name
+end
+coroutine.wrap(TDZOKX_fake_script)()
