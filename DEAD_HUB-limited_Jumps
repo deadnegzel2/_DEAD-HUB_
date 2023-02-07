@@ -1,0 +1,191 @@
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Login_Page = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Key_Box = Instance.new("TextBox")
+local Login_Button = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local DEAD_HUB = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local inf_jump_farm = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local Close_Button = Instance.new("TextButton")
+local Open_Button = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = (game:GetService("CoreGui") or gethui())
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Login_Page.Name = "Login_Page"
+Login_Page.Parent = ScreenGui
+Login_Page.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Login_Page.BorderColor3 = Color3.fromRGB(34, 255, 0)
+Login_Page.BorderSizePixel = 5
+Login_Page.Position = UDim2.new(0.323731124, 0, 0.154618472, 0)
+Login_Page.Size = UDim2.new(0, 256, 0, 343)
+
+Frame.Parent = Login_Page
+Frame.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Frame.Position = UDim2.new(-0.000487565994, 0, 0.422839999, 0)
+Frame.Size = UDim2.new(0, 256, 0, 197)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.24609375, 0, 0.308056861, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "KEY:"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Key_Box.Name = "Key_Box"
+Key_Box.Parent = Frame
+Key_Box.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+Key_Box.Position = UDim2.new(0.296875, 0, 0.308056861, 0)
+Key_Box.Size = UDim2.new(0, 162, 0, 50)
+Key_Box.Font = Enum.Font.SourceSans
+Key_Box.Text = "Key Here"
+Key_Box.TextColor3 = Color3.fromRGB(0, 0, 0)
+Key_Box.TextScaled = true
+Key_Box.TextSize = 14.000
+Key_Box.TextWrapped = true
+
+Login_Button.Name = "Login_Button"
+Login_Button.Parent = Frame
+Login_Button.BackgroundColor3 = Color3.fromRGB(145, 145, 145)
+Login_Button.Position = UDim2.new(0.109375, 0, 0.625592411, 0)
+Login_Button.Size = UDim2.new(0, 200, 0, 50)
+Login_Button.Font = Enum.Font.SourceSans
+Login_Button.Text = "Login"
+Login_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Login_Button.TextScaled = true
+Login_Button.TextSize = 14.000
+Login_Button.TextWrapped = true
+Login_Button.MouseButton1Down:connect(function()
+	if Key_Box.Text == "deadwashere" then
+		Login_Page.Visible = false
+		DEAD_HUB.Visible = true
+	end
+end)
+
+TextLabel_2.Parent = Login_Page
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.10546875, 0, 0.125364438, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "DEAD HUB"
+TextLabel_2.TextColor3 = Color3.fromRGB(254, 254, 254)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+DEAD_HUB.Name = "DEAD_HUB"
+DEAD_HUB.Parent = ScreenGui
+DEAD_HUB.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+DEAD_HUB.Position = UDim2.new(0.137174219, 0, 0.253012061, 0)
+DEAD_HUB.Size = UDim2.new(0, 528, 0, 283)
+DEAD_HUB.Visible = false
+
+Frame_2.Parent = DEAD_HUB
+Frame_2.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+Frame_2.Position = UDim2.new(-0.00108337402, 0, -0.00140488695, 0)
+Frame_2.Size = UDim2.new(0, 528, 0, 50)
+
+TextLabel_3.Parent = Frame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.192589968, 0, 0.00536437985, 0)
+TextLabel_3.Size = UDim2.new(0, 324, 0, 50)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "DEAD HUB - Limited Jumps"
+TextLabel_3.TextColor3 = Color3.fromRGB(254, 254, 254)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+inf_jump_farm.Name = "inf_jump_farm"
+inf_jump_farm.Parent = DEAD_HUB
+inf_jump_farm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+inf_jump_farm.Position = UDim2.new(0.0549242422, 0, 0.272084802, 0)
+inf_jump_farm.Size = UDim2.new(0, 474, 0, 36)
+inf_jump_farm.Font = Enum.Font.Creepster
+inf_jump_farm.Text = "Infinite Jump Farm"
+inf_jump_farm.TextColor3 = Color3.fromRGB(0, 0, 0)
+inf_jump_farm.TextScaled = true
+inf_jump_farm.TextSize = 14.000
+inf_jump_farm.TextWrapped = true
+inf_jump_farm.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/deadnegzel2/_DEAD-HUB_/main/limited_Jumps_Farm'),true))()
+end)
+
+TextButton.Parent = DEAD_HUB
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.0549242422, 0, 0.434628963, 0)
+TextButton.Size = UDim2.new(0, 473, 0, 36)
+TextButton.Font = Enum.Font.Creepster
+TextButton.Text = "Cooming Soon"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = DEAD_HUB
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Position = UDim2.new(0.0549242422, 0, 0.597173154, 0)
+TextButton_2.Size = UDim2.new(0, 473, 0, 36)
+TextButton_2.Font = Enum.Font.Creepster
+TextButton_2.Text = "Cooming Soon"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+TextButton_3.Parent = DEAD_HUB
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.Position = UDim2.new(0.0549242422, 0, 0.76678443, 0)
+TextButton_3.Size = UDim2.new(0, 473, 0, 36)
+TextButton_3.Font = Enum.Font.Creepster
+TextButton_3.Text = "Cooming Soon"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+Close_Button.Name = "Close_Button"
+Close_Button.Parent = DEAD_HUB
+Close_Button.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+Close_Button.Position = UDim2.new(0.873106062, 0, 0.0459363945, 0)
+Close_Button.Size = UDim2.new(0, 57, 0, 22)
+Close_Button.Font = Enum.Font.SourceSans
+Close_Button.Text = "----"
+Close_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close_Button.TextSize = 14.000
+Close_Button.MouseButton1Down:connect(function()
+	DEAD_HUB.Visible = false
+	Open_Button.Visible = true
+end)
+
+Open_Button.Name = "Open_Button"
+Open_Button.Parent = ScreenGui
+Open_Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open_Button.Position = UDim2.new(-0.0151098901, 0, 0.445851654, 0)
+Open_Button.Size = UDim2.new(0, 142, 0, 39)
+Open_Button.Font = Enum.Font.SourceSans
+Open_Button.Text = "Open"
+Open_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open_Button.TextSize = 14.000
+Open_Button.Visible = false
+Open_Button.MouseButton1Down:connect(function()
+	DEAD_HUB.Visible = true
+	Open_Button.Visible = false
+end)
