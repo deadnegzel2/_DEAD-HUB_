@@ -2,6 +2,7 @@ while true do
 wait(0.1)
 while true do
 wait(0.1)
+wait(10)
 local Details = {
     Description = "IF YOU DONT CLOSE HACK THEN YOU WILL BAN FOR 4 DAYS",
     Title = "EXPLOIT DEDECTED!",
